@@ -1,0 +1,56 @@
+.aboutMe
+  position: relative
+  display: flex
+  align-items: center
+  flex-direction: column
+  min-height: 100vh
+  width: 100vw
+  background-image: linear-gradient($color-light, $color-dark, )
+  padding: 10vh 10vw
+  overflow: hidden
+  @media(orientation: landscape) and (min-width:640px)
+    flex-direction: row-reverse
+    justify-content: space-between
+  &::after
+    content: ""
+    position: absolute
+    bottom:-20vh
+    right:-40vw
+    transform: rotate(-26deg) 
+    height: 30vh
+    width: 100vw
+    background-color: white
+  .photo
+    height: 30vh
+    margin-bottom: 10vh
+    @media(orientation: landscape)
+      height: 60vh
+    @media(orientation: landscape) and (min-width:640px)
+      height: auto
+      flex-basis: 35%
+      margin-bottom: 10vh
+    img
+      height: 100%
+      @media(orientation: landscape) and (min-width:640px)
+        width: 100%
+  article
+    color: white
+    text-align: center
+    @media(orientation: landscape) and (min-width:640px)
+      flex-basis: 60%
+    h2
+      margin-bottom: 5vh
+      color: $color-dark
+      font-size: 2em
+    p
+      margin-bottom: 3vh
+      a
+        color: $color-light
+        text-decoration: none
+        font-weight: bold
+        padding: 0 10px 3px 10px
+      a:hover
+        border-bottom: 1px solid white
+        border-right: 1px solid white
+        color: white
+     

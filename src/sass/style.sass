@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700&subset=latin-ext')
   
 body 
-  margin: 0
-  padding: 0
-  font-family: 'Titillium Web', sans-serif
+  width: 100vw
   overflow-x: hidden
 
-*, *::befor, *::after
+
+*, *::before, *::after
   box-sizing: border-box
+  margin: 0
+  padding: 0
 
 ul
   list-style: none
 
-.wrapper
-  padding: 5vh 10vw
+
 
 html
   font-size: 16px
+  font-family: 'Titillium Web', sans-serif
   @media (min-height: 667px)
     font-size: 20px
   @media (min-height: 1024px)
@@ -32,3 +33,5 @@ html
 
 @import "_variables.sass"
 @import "_header.sass"
+@import "_aboutMe.sass"
+@import "_projects.sass"
