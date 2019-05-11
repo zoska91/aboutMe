@@ -1,0 +1,40 @@
+footer
+  position: relative
+  background-color: $color-dark
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 7vh 
+  width: 100vw
+  @media(min-width: 768px)
+    flex-direction: row
+    justify-content: space-between
+  @media(orientation: landscape)
+    flex-direction: row
+    justify-content: space-between
+  p
+    color: $color-light
+  .links
+    display: flex
+    height: 100%
+    margin-bottom: 5vh
+    align-items: center
+    @media(min-width: 768px)
+      margin-bottom: 0
+    @media(orientation: landscape)
+      margin-bottom: 0
+    a
+      display: block
+      margin: 0 15px
+      height: 5vh
+      @media(orientation: landscape)
+        height: auto
+        width: 4vw
+        max-width: 30px
+      img
+        height: 100%
+        @media(orientation: landscape)
+          height: auto
+          width: 100%
+    a:hover
+      transform: scale(1.1)     
