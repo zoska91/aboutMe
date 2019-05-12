@@ -27,6 +27,8 @@
     height: 20vh
     width: 100%
     flex-wrap: wrap
+    @media(orientation: landscape)
+      height: 20vh
     .icon-filter
       width: 12vw
       max-height: 10vw
@@ -34,6 +36,11 @@
       background-repeat: no-repeat
       background-position: center
       background-size: contain
+      cursor: pointer
+      @media(orientation: landscape)
+        width: 6vw
+        max-width: 60px
+        margin: 0
   .projects-examples  
     display: flex
     flex-direction: column
@@ -43,14 +50,27 @@
     padding: 5vh 5vw
     max-width: 1024px
     margin: 0 auto
+    @media(orientation: landscape) and (min-width:731px)
+        flex-direction: row
+        flex-wrap: wrap
+        padding: 0
+        justify-content: space-between
     li
       min-height: 50vh
+      position: relative
+      @media(orientation: landscape) and (min-width:731px)
+        width: 40vw
+        max-width: 500px
+        padding: 0 1vw
       a 
         display: block
         height: 100%
         text-decoration: none
         color: black
         margin: 5vh auto 0 
+        @media(orientation: landscape) and (min-width:731px)
+          width: 100%
+          height: auto
         h3
           margin-bottom: 5vh
           padding: 2vh 0
@@ -70,12 +90,25 @@
           margin-bottom: 3vh 
         img:hover
           transform: scale(1.05)
+      .github
+        position: absolute
+        left: 90%
+        bottom: 3vh
+        height: 5vh
+        margin: 5vh auto 0 
+        img 
+          height: 100%
+          width: auto
+          border: none
+          box-shadow: none
+          border-radius: 0
       .used
         display: flex
         justify-content: flex-start
         height: 8vh
         flex-wrap: wrap
         margin-left: 5vw
+        width: 70%
         .used-icon
           width: 9vw
           height: 9vw
@@ -84,12 +117,20 @@
           background-position: center
           background-size: contain
           transition: .5s
-        .used-icon.on
-          margin-left: 10px
+          @media(orientation: landscape)
+            height: auto
+            width: 6vw
+            max-width: 60px
+            margin-left: -3vw
       .used:hover > .used-icon
-          margin-left: 10px
+        margin-left: 1vw
+        @media(orientation: landscape)
+          margin-left: 5px
 
-
+        
+          
+          
+  
     
 
       
