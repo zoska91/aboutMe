@@ -11,6 +11,8 @@
   @media(orientation: landscape) and (min-width:640px)
     flex-direction: row-reverse
     justify-content: space-between
+  @media(orientation: landscape) and (min-width: 1366px)
+    padding: 0 15vw
   &::after
     content: ""
     position: absolute
@@ -44,6 +46,9 @@
       font-size: 2em
     p
       margin-bottom: 3vh
+      font-size: 
+      @media(orientation: landscape) and (min-width:1024px)
+        font-size: 20px
       a
         color: $color-light
         text-decoration: none

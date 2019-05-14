@@ -21,6 +21,8 @@
   p
     color: #aaa
     padding: 4vw 3vh
+    @media(orientation: landscape)
+      padding: 4vw 10vw
   .filters
     display: flex
     justify-content: space-around
@@ -37,6 +39,7 @@
       background-position: center
       background-size: contain
       cursor: pointer
+      transition: .3s
       @media(orientation: landscape)
         width: 6vw
         max-width: 60px
@@ -55,7 +58,7 @@
         flex-wrap: wrap
         padding: 0
         justify-content: space-between
-    li
+    .project
       min-height: 50vh
       position: relative
       @media(orientation: landscape) and (min-width:731px)
@@ -121,17 +124,16 @@
             height: auto
             width: 6vw
             max-width: 60px
-            margin-left: -3vw
+            margin-left: -40px
       .used:hover > .used-icon
         margin-left: 1vw
         @media(orientation: landscape)
           margin-left: 5px
 
-        
-          
-          
-  
-    
+.filters:hover .icon-filter:not(:hover) 
+  opacity: 0.5
+.icon-filter.on
+  transform: scale(1.5) translateY(-10%)
 
       
 
