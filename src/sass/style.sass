@@ -36,3 +36,26 @@ html
 @import "_aboutMe.sass"
 @import "_projects.sass"
 @import "_footer.sass"
+
+.go-up.on
+  position: fixed
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  bottom: 5vh
+  left: 50%
+  transform: translateX(-50%)
+  height: 10vh
+  width: 10vh
+  max-height: 70px
+  max-width: 70px
+  // font-size: 7vh
+  background-color: $color-light
+  border: 4px solid $color-dark
+  border-radius: 50%
+  transition: .5s
+  opacity: .5
+  cursor: pointer
+.go-up.on:hover
+  opacity: 1
