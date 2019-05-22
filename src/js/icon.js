@@ -2,12 +2,6 @@ const iconsFilter = [...document.querySelectorAll(".icon-filter")];
 const iconsUsed = [...document.querySelectorAll(".used-icon")];
 const icons = iconsFilter.concat(iconsUsed);
 
-icons.forEach(icon => {
-  let name = icon.getAttribute("data-name");
-  name = name + "-circle.png";
-  icon.style.backgroundImage = `url('./../src/images/${name}')`;
-});
-
 // filters
 
 const filters = [...document.querySelectorAll(".icon-filter")];

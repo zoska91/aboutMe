@@ -7,7 +7,6 @@ const start = setTimeout(() => {
 $(document).on("scroll", function() {
   const WindowHeight = $(window).height();
   const scrollValue = $(this).scrollTop();
-  console.log(scrollValue);
 
   //header
 
