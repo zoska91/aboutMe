@@ -72,22 +72,23 @@ $(".header-button").on("click", function() {
   );
 });
 
+const button = document.querySelector(".go-up");
+
 window.addEventListener("scroll", () => {
   const scrollPosition = window.scrollY;
-  const button = document.querySelector(".go-up");
 
   if (scrollPosition > window.innerHeight / 2) {
     button.classList.add("on");
   } else {
     button.classList.remove("on");
   }
+});
 
-  button.addEventListener("click", () => {
-    $("body, html").animate(
-      {
-        scrollTop: $("header").offset().top
-      },
-      1000
-    );
-  });
+button.addEventListener("click", () => {
+  $("body, html").animate(
+    {
+      scrollTop: $("header").offset().top
+    },
+    1000
+  );
 });
