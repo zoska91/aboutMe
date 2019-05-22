@@ -4,8 +4,12 @@ const start = setTimeout(() => {
   $(".header-button").addClass("on-effect");
 }, 200);
 
+const articleFromTop = $("article").offset().top;
+const WindowHeight = $(window).height();
+const photoFromTop = $(".photo").offset().top;
+const filtersFromTop = $(".filters").offset().top;
+
 $(document).on("scroll", function() {
-  const WindowHeight = $(window).height();
   const scrollValue = $(this).scrollTop();
 
   //header
@@ -20,18 +24,16 @@ $(document).on("scroll", function() {
   else $(".icons").removeClass("on-effect");
 
   //aboutMe
-  const articleFromTop = $("article").offset().top;
+
   if (scrollValue > articleFromTop - WindowHeight)
     $("article").addClass("on-effect");
   else $("article").removeClass("on-effect");
 
-  const photoFromTop = $(".photo").offset().top;
   if (scrollValue > photoFromTop - WindowHeight)
     $(".photo").addClass("on-effect");
   else $(".photo").removeClass("on-effect");
 
   //projects
-  const filtersFromTop = $(".filters").offset().top;
   if (scrollValue > filtersFromTop - WindowHeight)
     $(".filters").addClass("on-effect");
   else $(".filters").removeClass("on-effect");
