@@ -26,11 +26,10 @@
     @media(orientation: landscape)
       padding: 4vw 10vw
   .filters
-    display: flex
-    justify-content: space-around
-    height: 20vh
+    display: grid
+    grid-template-columns: repeat(auto-fill, 10vw)
+    min-height: 20vh
     width: 100%
-    flex-wrap: wrap
     transform: scale(0)
     transition: .6s
     &.on-effect
@@ -38,7 +37,6 @@
     @media(orientation: landscape)
       height: 20vh
     .icon-filter
-      width: 12vw
       max-height: 10vw
       margin: 0 1vw
       cursor: pointer
@@ -99,7 +97,7 @@
           border-radius: 7px
           cursor: pointer
           transition: .7s
-          margin-bottom: 3vh 
+          // margin-bottom: 3vh 
         img:hover
           transform: scale(1.05)
       .github

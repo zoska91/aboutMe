@@ -1,340 +1,387 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>aboutMe</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>aboutMe</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./src/css/style.css" />
-</head>
-
-<body>
-  <div class="wrapper">
-    <header>
-      <ul class="links">
-        <li>
-          <a href="https://www.linkedin.com/in/zofia-janas-51a71380/"><img src="./src/images/in.png"
-              alt="in-logo" /></a>
-        </li>
-        <li>
-          <a href="https://github.com/zoska91"><img src="./src/images/github-logo.png" alt="github-logo" /></a>
-        </li>
-        <li>
-          <a href="mailto:zofiajanas@int.pl"><img src="./src/images/mail.png" alt="mail-logo" /></a>
-        </li>
-      </ul>
-
-      <div class="name">
-        <h1 class="firstName">zofia</h1>
-        <h1 class="lastName">Janas</h1>
-      </div>
-
-      <div class="icons">
-        <div class="icon">
-          <img src="./src/images/html-5.png" alt="html-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/css-3.png" alt="css-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/js-cube.png" alt="js-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/react.png" alt="react-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/jquery.png" alt="jquery-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/bootstrap.png" alt="bootstrap-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/nodejs.png" alt="nodejs-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/sql.png" alt="sql-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/sass.png" alt="sass-icon" />
-        </div>
-        <div class="icon">
-          <img src="./src/images/photoshop.png" alt="photoshop-icon" />
-        </div>
-      </div>
-
-      <button class="header-button">projekty</button>
-    </header>
-
-    <main>
-      <section class="aboutMe">
-        <div class="photo">
-          <img src="./src/images/zj-3.png" alt="moje-zdjęcie" />
-        </div>
-        <article>
-          <h2>o mnie</h2>
-          <p>
-            mieszkam we Wrocławiu i aktualnie jestem instruktorką nauki jazdy
-            oraz pracuje w e-commers w dziale bezpieczeństwa
-          </p>
-          <p>
-            od prawie roku intensywnie uczę się front-endu z nadzieją
-            zapuszczenia korzeni w programowaniu
-          </p>
-          <p>
-            przerobiłam w tym celu kilka kursów, wiele tutoriali, mnóstwo
-            własnych projektów i eksperymentów
-          </p>
-          <p>
-            te, z których jestem najbardziej dumna możesz obejrzeć tutaj lub
-            na <a href="https://github.com/zoska91">GitHubie</a>
-          </p>
-        </article>
-      </section>
-      <section class="projects">
-        <h2>projekty</h2>
-        <p>filtruj po:</p>
-        <div class="filters">
-          <div class="icon-filter" data-name="html">
-            <img src="./src/images/html-circle.png" alt="html-icon">
-          </div>
-          <div class="icon-filter" data-name="css">
-            <img src="./src/images/css-circle.png" alt="css-icon">
-          </div>
-          <div class="icon-filter" data-name="js">
-            <img src="./src/images/js-circle.png" alt="js-icon">
-          </div>
-          <div class="icon-filter" data-name="react">
-            <img src="./src/images/react-circle.png" alt="react-icon">
-          </div>
-          <div class="icon-filter" data-name="sass">
-            <img src="./src/images/sass-circle.png" alt="sass-icon">
-          </div>
-          <div class="icon-filter" data-name="jquery">
-            <img src="./src/images/jquery-circle.png" alt="jquery-icon">
-          </div>
-          <div class="icon-filter" data-name="gatsby">
-            <img src="./src/images/gatsby-circle.png" alt="gatsby-icon">
-          </div>
-          <div class="icon-filter" data-name="gulp">
-            <img src="./src/images/gulp-circle.png" alt="gulp-icon">
-          </div>
-          <div class="icon-filter" data-name="parcel">
-            <img src="./src/images/parcel-circle.png" alt="parcel-icon">
-          </div>
-          <div class="icon-filter" data-name="bootstrap">
-            <img src="./src/images/bootstrap-circle.png" alt="bootstrap-icon">
-          </div>
-          <div class="icon-filter" data-name="graphcms">
-            <img src="./src/images/graphcms-circle.png" alt="grphcms-icon">
-          </div>
-          <div class="icon-filter" data-name="api">
-            <img src="./src/images/api-circle.png" alt="api-icon">
-          </div>
-        </div>
-
-        <ul class="projects-examples">
-          <li class="project" data-filters="html css js gatsby graphcms">
-            <a href="http://spiewnik.zofiajanas.pl/" target="_blank">
-              <h3>Śpiewnik</h3>
-              <img src="./src/images/projects/spiewnik.jpg" alt="zdjęcie poglądowe spiewnik" />
-            </a>
-            <div class="used">
-              <div class="used-icon" data-name="html">
-                <img src="./src/images/html-circle.png" alt="html-icon">
-              </div>
-              <div class="used-icon" data-name="css">
-                <img src="./src/images/css-circle.png" alt="css-icon">
-              </div>
-              <div class="used-icon" data-name="js">
-                <img src="./src/images/js-circle.png" alt="js-icon">
-              </div>
-              <div class="used-icon" data-name="gatsby">
-                <img src="./src/images/gatsby-circle.png" alt="gatsby-icon">
-              </div>
-              <div class="used-icon" data-name="graphcms">
-                <img src="./src/images/graphcms-circle.png" alt="api-icon">
-              </div>
-            </div>
-            <a class="github" href="https://github.com/zoska91/spiewnik" target="_blank"><img
-                src="./src/images/github-logo.png" alt="github-logo" /></a>
+  <body>
+    <div class="wrapper">
+      <header>
+        <ul class="links">
+          <li>
+            <a href="https://www.linkedin.com/in/zofia-janas-51a71380/"
+              ><img src="./src/images/in.png" alt="in-logo"
+            /></a>
           </li>
-          <li class="project" data-filters="html css js api bootstrap parcel">
-            <a href="./TVSeries/index.html" target="_blank">
-              <h3>Seriale</h3>
-              <img src="./src/images/projects/tvseries.jpg" alt="zdjęcie poglądowe seria;e" />
-            </a>
-            <div class="used">
-              <div class="used-icon" data-name="html">
-                <img src="./src/images/html-circle.png" alt="html-icon">
-              </div>
-              <div class="used-icon" data-name="css">
-                <img src="./src/images/css-circle.png" alt="css-icon">
-              </div>
-              <div class="used-icon" data-name="js">
-                <img src="./src/images/js-circle.png" alt="js-icon">
-              </div>
-              <div class="used-icon" data-name="api">
-                <img src="./src/images/api-circle.png" alt="api-icon">
-              </div>
-              <div class="used-icon" data-name="bootstrap">
-                <img src="./src/images/bootstrap-circle.png" alt="bootstrap-icon">
-              </div>
-              <div class="used-icon" data-name="parcel">
-                <img src="./src/images/parcel-circle.png" alt="parcel-icon">
-              </div>
-            </div>
-            <a class="github" href="https://github.com/zoska91/series" target="_blank"><img
-                src="./src/images/github-logo.png" alt="github-logo" /></a>
+          <li>
+            <a href="https://github.com/zoska91"><img src="./src/images/github-logo.png" alt="github-logo"/></a>
           </li>
-          <li class="project" data-filters="html css js api react">
-            <a href="https://zoska91.github.io/API-harryPotter-Quiz/" target="_blank">
-              <h3>SPA z API w React</h3>
-              <img src="./src/images/projects/hp.jpg" alt="zdjęcie poglądowe API-harry-potter" />
-            </a>
-            <div class="used">
-              <div class="used-icon" data-name="html">
-                <img src="./src/images/html-circle.png" alt="html-icon">
-              </div>
-              <div class="used-icon" data-name="css">
-                <img src="./src/images/css-circle.png" alt="css-icon">
-              </div>
-              <div class="used-icon" data-name="js">
-                <img src="./src/images/js-circle.png" alt="js-icon">
-              </div>
-              <div class="used-icon" data-name="api">
-                <img src="./src/images/api-circle.png" alt="api-icon">
-              </div>
-              <div class="used-icon" data-name="react">
-                <img src="./src/images/react-circle.png" alt="react-icon">
-              </div>
-            </div>
-            <a class="github" href="https://github.com/zoska91/API-harryPotter-Quiz" target="_blank"><img
-                src="./src/images/github-logo.png" alt="github-logo" /></a>
-          </li>
-          <li class="project" data-filters="html css js jquery">
-            <a href="https://zoska91.github.io/PSDtoHTML/" target="_blank">
-              <h3>PDS to HTML</h3>
-              <img src="./src/images/projects/PDStoHTML.jpg" alt="zdjęcie poglądowe PSDtoHTML" />
-            </a>
-            <div class="used">
-              <div class="used-icon" data-name="html">
-                <img src="./src/images/html-circle.png" alt="html-icon">
-              </div>
-              <div class="used-icon" data-name="css">
-                <img src="./src/images/css-circle.png" alt="css-icon">
-              </div>
-              <div class="used-icon" data-name="js">
-                <img src="./src/images/js-circle.png" alt="js-icon">
-              </div>
-              <div class="used-icon" data-name="jquery">
-                <img src="./src/images/jquery-circle.png" alt="jquery-icon">
-              </div>
-            </div>
-            <a class="github" href="https://github.com/zoska91/PSDtoHTML" target="_blank"><img
-                src="./src/images/github-logo.png" alt="github-logo" /></a>
-          </li>
-          <li class="project" data-filters="html css js gulp">
-            <a href="https://zoska91.github.io/Oczko/" target="_blank">
-              <h3>oczko</h3>
-              <img src="./src/images/projects/oczko.jpg" alt="plansza gry oczko" />
-            </a>
-            <div class="used">
-              <div class="used-icon" data-name="html">
-                <img src="./src/images/html-circle.png" alt="html-icon">
-              </div>
-              <div class="used-icon" data-name="css">
-                <img src="./src/images/css-circle.png" alt="css-icon">
-              </div>
-              <div class="used-icon" data-name="js">
-                <img src="./src/images/js-circle.png" alt="js-icon">
-              </div>
-              <div class="used-icon" data-name="gulp">
-                <img src="./src/images/gulp-circle.png" alt="gulp-icon">
-              </div>
-            </div>
-            <a class="github" href="https://github.com/zoska91/Oczko" target="_blank"><img
-                src="./src/images/github-logo.png" alt="github-logo" /></a>
-          </li>
-          <li class="project" data-filters="html css js gulp">
-            <a href="https://zoska91.github.io/alkochinczyk/" target="_blank">
-              <h3>alkochińczyk</h3>
-              <img src="./src/images/projects/alkochinczyk.jpg" alt="zdjęcie planszy alkochińćzyka" />
-            </a>
-            <div class="used">
-              <div class="used-icon" data-name="html">
-                <img src="./src/images/html-circle.png" alt="html-icon">
-              </div>
-              <div class="used-icon" data-name="css">
-                <img src="./src/images/css-circle.png" alt="css-icon">
-              </div>
-              <div class="used-icon" data-name="js">
-                <img src="./src/images/js-circle.png" alt="js-icon">
-              </div>
-              <div class="used-icon" data-name="gulp">
-                <img src="./src/images/gulp-circle.png" alt="gulp-icon">
-              </div>
-            </div>
-            <a class="github" href="https://github.com/zoska91/alkochinczyk" target="_blank"><img
-                src="./src/images/github-logo.png" alt="github-logo" /></a>
-          </li>
-          <li class="project" data-filters="html css js jquery parcel sass">
-            <a href="https://zoska91.github.io/portfolio/" target="_blank">
-              <h3>stare portfolio</h3>
-              <img src="./src/images/projects/old-portfolio.jpg" alt="zdjęcie-stare portfolio" />
-            </a>
-            <div class="used">
-              <div class="used-icon" data-name="html">
-                <img src="./src/images/html-circle.png" alt="html-icon">
-              </div>
-              <div class="used-icon" data-name="css">
-                <img src="./src/images/css-circle.png" alt="css-icon">
-              </div>
-              <div class="used-icon" data-name="js">
-                <img src="./src/images/js-circle.png" alt="js-icon">
-              </div>
-              <div class="used-icon" data-name="jquery">
-                <img src="./src/images/jquery-circle.png" alt="jquery-icon">
-              </div>
-              <div class="used-icon" data-name="parcel">
-                <img src="./src/images/parcel-circle.png" alt="parcel-icon">
-              </div>
-              <div class="used-icon" data-name="sass">
-                <img src="./src/images/sass-circle.png" alt="sass-icon">
-              </div>
-            </div>
-            <a class="github" href="https://github.com/zoska91/portfolio" target="_blank"><img
-                src="./src/images/github-logo.png" alt="github-logo" /></a>
+          <li>
+            <a href="mailto:zofiajanas@int.pl"><img src="./src/images/mail.png" alt="mail-logo"/></a>
           </li>
         </ul>
-        <div class="allProjectsOff">
-          Brak wyników. Wybierz inne filtry.
+
+        <div class="name">
+          <h1 class="firstName">zofia</h1>
+          <h1 class="lastName">Janas</h1>
         </div>
-      </section>
-    </main>
-    <footer>
-      <ul class="links">
-        <li>
-          <a href="https://www.linkedin.com/in/zofia-janas-51a71380/"><img src="./src/images/in.png"
-              alt="in-logo" /></a>
-        </li>
-        <li>
-          <a href="https://github.com/zoska91"><img src="./src/images/github-logo.png" alt="github-logo" /></a>
-        </li>
-        <li>
-          <a href="mailto:zofiajanas@int.pl"><img src="./src/images/mail.png" alt="mail-logo" /></a>
-        </li>
-      </ul>
-      <p>zofiajanas@int.pl</p>
-    </footer>
-    <div class="go-up"><i class="fas fa-angle-double-up"></i></div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="./src/js/effects.js"></script>
-  <script src="./src/js/icon.js"></script>
-</body>
+        <div class="icons">
+          <div class="icon">
+            <img src="./src/images/html-5.png" alt="html-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/css-3.png" alt="css-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/js-cube.png" alt="js-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/react.png" alt="react-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/jquery.png" alt="jquery-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/bootstrap.png" alt="bootstrap-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/nodejs.png" alt="nodejs-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/sql.png" alt="sql-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/sass.png" alt="sass-icon" />
+          </div>
+          <div class="icon">
+            <img src="./src/images/photoshop.png" alt="photoshop-icon" />
+          </div>
+        </div>
 
+        <button class="header-button">projekty</button>
+      </header>
+
+      <main>
+        <section class="aboutMe">
+          <div class="photo">
+            <img src="./src/images/zj-3.png" alt="moje-zdjęcie" />
+          </div>
+          <article>
+            <h2>o mnie</h2>
+            <p>
+              mieszkam we Wrocławiu i aktualnie jestem instruktorką nauki jazdy oraz pracuje w e-commers w dziale
+              bezpieczeństwa
+            </p>
+            <p>
+              od roku intensywnie uczę się front-endu z nadzieją zapuszczenia korzeni w programowaniu
+            </p>
+            <p>
+              przerobiłam w tym celu kilka kursów, wiele tutoriali, mnóstwo własnych projektów i eksperymentów
+            </p>
+            <p>
+              te, z których jestem najbardziej dumna możesz obejrzeć tutaj lub na
+              <a href="https://github.com/zoska91">GitHubie</a>
+            </p>
+          </article>
+        </section>
+        <section class="projects">
+          <h2>projekty</h2>
+          <p>filtruj po:</p>
+          <div class="filters">
+            <div class="icon-filter" data-name="html">
+              <img src="./src/images/html-circle.png" alt="html-icon" />
+            </div>
+            <div class="icon-filter" data-name="css">
+              <img src="./src/images/css-circle.png" alt="css-icon" />
+            </div>
+            <div class="icon-filter" data-name="js">
+              <img src="./src/images/js-circle.png" alt="js-icon" />
+            </div>
+            <div class="icon-filter" data-name="react">
+              <img src="./src/images/react-circle.png" alt="react-icon" />
+            </div>
+            <div class="icon-filter" data-name="sass">
+              <img src="./src/images/sass-circle.png" alt="sass-icon" />
+            </div>
+            <div class="icon-filter" data-name="jquery">
+              <img src="./src/images/jquery-circle.png" alt="jquery-icon" />
+            </div>
+            <div class="icon-filter" data-name="gatsby">
+              <img src="./src/images/gatsby-circle.png" alt="gatsby-icon" />
+            </div>
+            <div class="icon-filter" data-name="gulp">
+              <img src="./src/images/gulp-circle.png" alt="gulp-icon" />
+            </div>
+            <div class="icon-filter" data-name="parcel">
+              <img src="./src/images/parcel-circle.png" alt="parcel-icon" />
+            </div>
+            <div class="icon-filter" data-name="bootstrap">
+              <img src="./src/images/bootstrap-circle.png" alt="bootstrap-icon" />
+            </div>
+            <div class="icon-filter" data-name="graphcms">
+              <img src="./src/images/graphcms-circle.png" alt="grphcms-icon" />
+            </div>
+            <div class="icon-filter" data-name="api">
+              <img src="./src/images/api-circle.png" alt="api-icon" />
+            </div>
+            <div class="icon-filter" data-name="expressjs">
+              <img src="./src/images/expressjs.png" alt="expressjs-icon" />
+            </div>
+            <div class="icon-filter" data-name="bem">
+              <img src="./src/images/bem.png" alt="bem-icon" />
+            </div>
+            <div class="icon-filter" data-name="mongodb">
+              <img src="./src/images/mongodb.png" alt="mongodb-icon" />
+            </div>
+          </div>
+
+          <ul class="projects-examples">
+            <li class="project" data-filters="html css js expressjs bem mongodb">
+              <a href="https://english-zoo.herokuapp.com/" target="_blank">
+                <h3>Prywatny słownik</h3>
+                <img src="./src/images/projects/english.PNG" alt="zdjęcie poglądowe słownik" />
+              </a>
+              <div class="used">
+                <div class="used-icon" data-name="html">
+                  <img src="./src/images/html-circle.png" alt="html-icon" />
+                </div>
+                <div class="used-icon" data-name="css">
+                  <img src="./src/images/css-circle.png" alt="css-icon" />
+                </div>
+                <div class="used-icon" data-name="js">
+                  <img src="./src/images/js-circle.png" alt="js-icon" />
+                </div>
+                <div class="used-icon" data-name="expressjs">
+                  <img src="./src/images/expressjs.png" alt="express-icon" />
+                </div>
+                <div class="used-icon" data-name="bem">
+                  <img src="./src/images/bem.png" alt="api-icon" />
+                </div>
+                <div class="used-icon" data-name="mongodb">
+                  <img src="./src/images/mongodb.png" alt="mongodb-icon" />
+                </div>
+              </div>
+              <a class="github" href="https://github.com/zoska91/dictionary" target="_blank"
+                ><img src="./src/images/github-logo.png" alt="github-logo"
+              /></a>
+            </li>
+            <li class="project" data-filters="html css js gatsby graphcms">
+              <a href="http://spiewnik.zofiajanas.pl/" target="_blank">
+                <h3>Śpiewnik</h3>
+                <img src="./src/images/projects/spiewnik.jpg" alt="zdjęcie poglądowe spiewnik" />
+              </a>
+              <div class="used">
+                <div class="used-icon" data-name="html">
+                  <img src="./src/images/html-circle.png" alt="html-icon" />
+                </div>
+                <div class="used-icon" data-name="css">
+                  <img src="./src/images/css-circle.png" alt="css-icon" />
+                </div>
+                <div class="used-icon" data-name="js">
+                  <img src="./src/images/js-circle.png" alt="js-icon" />
+                </div>
+                <div class="used-icon" data-name="gatsby">
+                  <img src="./src/images/gatsby-circle.png" alt="gatsby-icon" />
+                </div>
+                <div class="used-icon" data-name="graphcms">
+                  <img src="./src/images/graphcms-circle.png" alt="api-icon" />
+                </div>
+              </div>
+              <a class="github" href="https://github.com/zoska91/spiewnik" target="_blank"
+                ><img src="./src/images/github-logo.png" alt="github-logo"
+              /></a>
+            </li>
+            <li class="project" data-filters="html css js api bootstrap parcel">
+              <a href="./TVSeries/index.html" target="_blank">
+                <h3>Seriale</h3>
+                <img src="./src/images/projects/tvseries.jpg" alt="zdjęcie poglądowe seria;e" />
+              </a>
+              <div class="used">
+                <div class="used-icon" data-name="html">
+                  <img src="./src/images/html-circle.png" alt="html-icon" />
+                </div>
+                <div class="used-icon" data-name="css">
+                  <img src="./src/images/css-circle.png" alt="css-icon" />
+                </div>
+                <div class="used-icon" data-name="js">
+                  <img src="./src/images/js-circle.png" alt="js-icon" />
+                </div>
+                <div class="used-icon" data-name="api">
+                  <img src="./src/images/api-circle.png" alt="api-icon" />
+                </div>
+                <div class="used-icon" data-name="bootstrap">
+                  <img src="./src/images/bootstrap-circle.png" alt="bootstrap-icon" />
+                </div>
+                <div class="used-icon" data-name="parcel">
+                  <img src="./src/images/parcel-circle.png" alt="parcel-icon" />
+                </div>
+              </div>
+              <a class="github" href="https://github.com/zoska91/series" target="_blank"
+                ><img src="./src/images/github-logo.png" alt="github-logo"
+              /></a>
+            </li>
+            <li class="project" data-filters="html css js api react">
+              <a href="https://zoska91.github.io/API-harryPotter-Quiz/" target="_blank">
+                <h3>SPA z API w React</h3>
+                <img src="./src/images/projects/hp.jpg" alt="zdjęcie poglądowe API-harry-potter" />
+              </a>
+              <div class="used">
+                <div class="used-icon" data-name="html">
+                  <img src="./src/images/html-circle.png" alt="html-icon" />
+                </div>
+                <div class="used-icon" data-name="css">
+                  <img src="./src/images/css-circle.png" alt="css-icon" />
+                </div>
+                <div class="used-icon" data-name="js">
+                  <img src="./src/images/js-circle.png" alt="js-icon" />
+                </div>
+                <div class="used-icon" data-name="api">
+                  <img src="./src/images/api-circle.png" alt="api-icon" />
+                </div>
+                <div class="used-icon" data-name="react">
+                  <img src="./src/images/react-circle.png" alt="react-icon" />
+                </div>
+              </div>
+              <a class="github" href="https://github.com/zoska91/API-harryPotter-Quiz" target="_blank"
+                ><img src="./src/images/github-logo.png" alt="github-logo"
+              /></a>
+            </li>
+            <li class="project" data-filters="html css js jquery">
+              <a href="https://zoska91.github.io/PSDtoHTML/" target="_blank">
+                <h3>PDS to HTML</h3>
+                <img src="./src/images/projects/PDStoHTML.jpg" alt="zdjęcie poglądowe PSDtoHTML" />
+              </a>
+              <div class="used">
+                <div class="used-icon" data-name="html">
+                  <img src="./src/images/html-circle.png" alt="html-icon" />
+                </div>
+                <div class="used-icon" data-name="css">
+                  <img src="./src/images/css-circle.png" alt="css-icon" />
+                </div>
+                <div class="used-icon" data-name="js">
+                  <img src="./src/images/js-circle.png" alt="js-icon" />
+                </div>
+                <div class="used-icon" data-name="jquery">
+                  <img src="./src/images/jquery-circle.png" alt="jquery-icon" />
+                </div>
+              </div>
+              <a class="github" href="https://github.com/zoska91/PSDtoHTML" target="_blank"
+                ><img src="./src/images/github-logo.png" alt="github-logo"
+              /></a>
+            </li>
+            <li class="project" data-filters="html css js gulp">
+              <a href="https://zoska91.github.io/Oczko/" target="_blank">
+                <h3>oczko</h3>
+                <img src="./src/images/projects/oczko.jpg" alt="plansza gry oczko" />
+              </a>
+              <div class="used">
+                <div class="used-icon" data-name="html">
+                  <img src="./src/images/html-circle.png" alt="html-icon" />
+                </div>
+                <div class="used-icon" data-name="css">
+                  <img src="./src/images/css-circle.png" alt="css-icon" />
+                </div>
+                <div class="used-icon" data-name="js">
+                  <img src="./src/images/js-circle.png" alt="js-icon" />
+                </div>
+                <div class="used-icon" data-name="gulp">
+                  <img src="./src/images/gulp-circle.png" alt="gulp-icon" />
+                </div>
+              </div>
+              <a class="github" href="https://github.com/zoska91/Oczko" target="_blank"
+                ><img src="./src/images/github-logo.png" alt="github-logo"
+              /></a>
+            </li>
+            <li class="project" data-filters="html css js gulp">
+              <a href="https://zoska91.github.io/alkochinczyk/" target="_blank">
+                <h3>alkochińczyk</h3>
+                <img src="./src/images/projects/alkochinczyk.jpg" alt="zdjęcie planszy alkochińćzyka" />
+              </a>
+              <div class="used">
+                <div class="used-icon" data-name="html">
+                  <img src="./src/images/html-circle.png" alt="html-icon" />
+                </div>
+                <div class="used-icon" data-name="css">
+                  <img src="./src/images/css-circle.png" alt="css-icon" />
+                </div>
+                <div class="used-icon" data-name="js">
+                  <img src="./src/images/js-circle.png" alt="js-icon" />
+                </div>
+                <div class="used-icon" data-name="gulp">
+                  <img src="./src/images/gulp-circle.png" alt="gulp-icon" />
+                </div>
+              </div>
+              <a class="github" href="https://github.com/zoska91/alkochinczyk" target="_blank"
+                ><img src="./src/images/github-logo.png" alt="github-logo"
+              /></a>
+            </li>
+            <li class="project" data-filters="html css js jquery parcel sass">
+              <a href="https://zoska91.github.io/portfolio/" target="_blank">
+                <h3>stare portfolio</h3>
+                <img src="./src/images/projects/old-portfolio.jpg" alt="zdjęcie-stare portfolio" />
+              </a>
+              <div class="used">
+                <div class="used-icon" data-name="html">
+                  <img src="./src/images/html-circle.png" alt="html-icon" />
+                </div>
+                <div class="used-icon" data-name="css">
+                  <img src="./src/images/css-circle.png" alt="css-icon" />
+                </div>
+                <div class="used-icon" data-name="js">
+                  <img src="./src/images/js-circle.png" alt="js-icon" />
+                </div>
+                <div class="used-icon" data-name="jquery">
+                  <img src="./src/images/jquery-circle.png" alt="jquery-icon" />
+                </div>
+                <div class="used-icon" data-name="parcel">
+                  <img src="./src/images/parcel-circle.png" alt="parcel-icon" />
+                </div>
+                <div class="used-icon" data-name="sass">
+                  <img src="./src/images/sass-circle.png" alt="sass-icon" />
+                </div>
+              </div>
+              <a class="github" href="https://github.com/zoska91/portfolio" target="_blank"
+                ><img src="./src/images/github-logo.png" alt="github-logo"
+              /></a>
+            </li>
+          </ul>
+          <div class="allProjectsOff">
+            Brak wyników. Wybierz inne filtry.
+          </div>
+        </section>
+      </main>
+      <footer>
+        <ul class="links">
+          <li>
+            <a href="https://www.linkedin.com/in/zofia-janas-51a71380/"
+              ><img src="./src/images/in.png" alt="in-logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/zoska91"><img src="./src/images/github-logo.png" alt="github-logo"/></a>
+          </li>
+          <li>
+            <a href="mailto:zofiajanas@int.pl"><img src="./src/images/mail.png" alt="mail-logo"/></a>
+          </li>
+        </ul>
+        <p>zofiajanas@int.pl</p>
+      </footer>
+      <div class="go-up"><i class="fas fa-angle-double-up"></i></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./src/js/effects.js"></script>
+    <script src="./src/js/icon.js"></script>
+  </body>
 </html>
